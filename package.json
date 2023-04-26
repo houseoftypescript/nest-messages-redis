@@ -13,14 +13,18 @@
     "yarn": "1.22.19"
   },
   "scripts": {
-    "build:producer": "yarn workspace @nest/redis-producer build",
-    "dev:producer": "yarn workspace @nest/redis-producer start:dev",
-    "lint:producer": "yarn workspace @nest/redis-producer lint",
-    "test:producer": "yarn workspace @nest/redis-producer test",
     "build:consumer": "yarn workspace @nest/redis-consumer build",
     "dev:consumer": "yarn workspace @nest/redis-consumer start:dev",
     "lint:consumer": "yarn workspace @nest/redis-consumer lint",
     "test:consumer": "yarn workspace @nest/redis-consumer test",
+    "build:producer": "yarn workspace @nest/redis-producer build",
+    "dev:producer": "yarn workspace @nest/redis-producer start:dev",
+    "lint:producer": "yarn workspace @nest/redis-producer lint",
+    "test:producer": "yarn workspace @nest/redis-producer test",
+    "build": "yarn build:consumer && yarn build:producer",
+    "dev": "yarn dev:consumer && yarn dev:producer",
+    "lint": "yarn lint:consumer && yarn lint:producer",
+    "test": "yarn test:consumer && yarn test:producer",
     "prepare": "husky install || true"
   },
   "devDependencies": {
