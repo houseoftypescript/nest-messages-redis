@@ -1,11 +1,11 @@
-import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
 import { INestApplication } from '@nestjs/common';
+import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { writeFileSync } from 'fs';
-import { dump } from 'js-yaml';
-import environments from './common/environments/environments';
 import helmet from 'helmet';
+import { dump } from 'js-yaml';
+import { AppModule } from './app.module';
+import environments from './common/environments/environments';
 
 const swaggerify = (app: INestApplication) => {
   const config = new DocumentBuilder()

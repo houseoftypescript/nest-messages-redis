@@ -1,0 +1,119 @@
+{
+  "item": [
+    {
+      "name": "messages",
+      "description": "",
+      "item": [
+        {
+          "name": "publish",
+          "description": "",
+          "item": [
+            {
+              "id": "b12fb29b-5592-4f3e-8667-fc60450a1fd8",
+              "name": "Messages Controller publish Event",
+              "request": {
+                "name": "Messages Controller publish Event",
+                "description": {},
+                "url": {
+                  "path": ["messages", "publish"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [{ "key": "Accept", "value": "application/json" }],
+                "method": "POST",
+                "body": {},
+                "auth": null
+              },
+              "response": [
+                {
+                  "id": "1f88a247-8a07-4d73-b60b-f3cd0b9e7c21",
+                  "originalRequest": {
+                    "url": {
+                      "path": ["messages", "publish"],
+                      "host": ["{{baseUrl}}"],
+                      "query": [],
+                      "variable": []
+                    },
+                    "method": "POST",
+                    "body": {}
+                  },
+                  "status": "Internal Server Error",
+                  "code": 500,
+                  "header": [
+                    { "key": "Content-Type", "value": "application/json" }
+                  ],
+                  "body": "{\n  \"status\": \"<string>\"\n}",
+                  "cookie": [],
+                  "_postman_previewlanguage": "json"
+                }
+              ],
+              "event": [],
+              "protocolProfileBehavior": { "disableBodyPruning": true }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "health",
+      "description": "",
+      "item": [
+        {
+          "id": "d0f826c6-57e1-40bc-847b-57291c0f4b98",
+          "name": "Health Controller get Health",
+          "request": {
+            "name": "Health Controller get Health",
+            "description": {},
+            "url": {
+              "path": ["health"],
+              "host": ["{{baseUrl}}"],
+              "query": [],
+              "variable": []
+            },
+            "header": [{ "key": "Accept", "value": "application/json" }],
+            "method": "GET",
+            "body": {},
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "93e0a9ea-7b57-4f79-84d2-8af813f3507a",
+              "originalRequest": {
+                "url": {
+                  "path": ["health"],
+                  "host": ["{{baseUrl}}"],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                { "key": "Content-Type", "value": "application/json" }
+              ],
+              "body": "{\n  \"status\": \"<string>\"\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": { "disableBodyPruning": true }
+        }
+      ]
+    }
+  ],
+  "event": [],
+  "variable": [{ "key": "baseUrl", "value": "/" }],
+  "info": {
+    "_postman_id": "a6a4714b-6fd6-458d-8374-b9e5b747f4bc",
+    "name": "Nest.js - Redis - Template",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Nest.js - Redis - Template",
+      "type": "text/plain"
+    }
+  }
+}
